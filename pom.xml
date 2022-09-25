@@ -13,4 +13,10 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
+    <parent>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.7.3</version>
+    </parent>
+
 </project>
