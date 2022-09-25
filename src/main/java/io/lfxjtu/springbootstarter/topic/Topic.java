@@ -3,6 +3,8 @@ package io.lfxjtu.springbootstarter.topic;
 import lombok.Getter;
 import lombok.Setter;
 
+@Getter
+@Setter
 public class Topic {
     public Topic() {
     }
@@ -14,8 +16,7 @@ public class Topic {
         this.description = description;
     }
 
-    @Getter
-    @Setter
+
     private String id;
     private String name;
     private String description;
