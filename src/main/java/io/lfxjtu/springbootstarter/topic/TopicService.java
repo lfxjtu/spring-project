@@ -23,5 +23,9 @@ public class TopicService {
         Optional<Topic> topic = topics.stream().filter(t ->t.getId().equals(id)).findFirst();
         return topic.orElse(null);
     }
+
+    public void addTopic(Topic topic) {
+        topics.add(topic);
+    }
 }
 
