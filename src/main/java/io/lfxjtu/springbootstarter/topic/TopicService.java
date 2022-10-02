@@ -30,11 +30,10 @@ public class TopicService {
     }
 
     public void updateTopic(Topic topic, String id) {
-        for(Topic t:topics){
-            if (t.getId().equals(id))
+        for(int i = 0; i < topics.size(); i ++){
+            if (topics.get(i).getId().equals(id))
             {
-                t.setName(topic.getName());
-                t.setDescription(topic.getDescription());
+                topics.set(i, topic);
             }
         }
     }
